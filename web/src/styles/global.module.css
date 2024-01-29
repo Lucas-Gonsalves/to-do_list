@@ -24,9 +24,18 @@ body, input, button {
   font-family: var(--font-inter);
   font-weight: var(--weight-regular);
   font-size: var(--size-xm);
+  color: var(--gray-100);
 }
 
 
 img {
   -webkit-user-drag: none;
+}
+
+
+:focus {
+
+  outline-color: var(--purple-300);
+  outline-width: 1px;
+  outline-style: solid;
 }
