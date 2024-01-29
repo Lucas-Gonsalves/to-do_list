@@ -1,0 +1,58 @@
+.header {
+  width: 100%;
+  min-width: max-content;
+
+  height: 15rem;
+  padding: 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--gray-700);
+}
+
+
+.logo {
+  min-width: 12.6rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 1.2rem;
+}
+
+
+.logo img {
+  width: 2.2rem;
+  height: 3.6rem;
+}
+
+
+.logo h1 {
+  font-size: var(--size-lg);
+  
+  line-height: 140%;
+  font-weight: var(--weight-bold-title);
+
+  color: var(--blue-100);
+}
+
+
+.logo h1 span {
+  color: var(--purple-300);
+  font-weight: var(--weight-bold-title);
+}
+
+
+@media (min-width: 425px) {
+
+  .header {
+    height: 20rem;
+  }
+
+  .logo h1 {
+    font-size: var(--size-xgg);
+  }
+}

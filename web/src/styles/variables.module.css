@@ -24,8 +24,11 @@
   --size-xs: 1.2rem;
   --size-xm: 1.4rem;
   --size-xg: 1.6rem;
+  --size-lg: 3.2rem;
+  --size-xgg: 4rem;
 
   /*font-wheigth*/
   --weight-regular: 400;
   --weight-bold: 700;
+  --weight-bold-title: 900;
 }
