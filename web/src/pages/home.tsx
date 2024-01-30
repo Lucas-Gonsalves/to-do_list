@@ -21,15 +21,17 @@ export function Home() {
     <div className={styles.home}>
       <Header />
 
-      <main>
+      <main className={styles.content}>
 
-        <div>
+        <form className={styles.formToCreateList}>
           <Input 
             value={listDescription}
             placeHolder="Adicione uma nova tarefa"
             onUpdateValueInput={onUpdateValueInput}
           />
-        </div>
+
+          <button></button>
+        </form>
 
       </main>
     </div>

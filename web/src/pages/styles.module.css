@@ -1,4 +1,33 @@
 .home {
   width: 100%;
+  min-width: 30rem;
+
   height: 100vh;
+}
+
+
+.content {
+  max-width: 73.6rem;
+  
+  margin: 0 auto auto auto;
+
+  margin-top: -4rem;
+  padding: 2rem;
+}
+
+
+.formToCreateList {
+  display: flex;
+  gap: .8rem;
+}
+
+
+
+
+@media (min-width: 425px) {
+  .content {
+    margin-top: -4.3rem;
+
+    padding: 1.6rem;
+  }
 }
