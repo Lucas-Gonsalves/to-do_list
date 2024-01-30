@@ -11,7 +11,7 @@
   
   margin: 0 auto auto auto;
 
-  margin-top: -4rem;
+  margin-top: -4.4rem;
   padding: 2rem;
 }
 
@@ -26,8 +26,6 @@
 
 @media (min-width: 425px) {
   .content {
-    margin-top: -4.3rem;
-
     padding: 1.6rem;
   }
 }

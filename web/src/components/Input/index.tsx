@@ -3,13 +3,13 @@ import styles from "./styles.module.css";
 import { ChangeEvent } from "react";
 
 
-interface InputAtribute {
+interface InputProps {
   value: string;
   placeHolder: string;
   onUpdateValueInput: (value: string) => void;
 };
 
-export function Input({value, placeHolder, onUpdateValueInput}: InputAtribute) {
+export function Input({value, placeHolder, onUpdateValueInput}: InputProps) {
 
   function callerOfUpdateValueInput(event: ChangeEvent<HTMLInputElement>) {
     onUpdateValueInput(event.target.value);

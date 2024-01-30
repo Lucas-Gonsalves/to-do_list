@@ -2,6 +2,8 @@ import styles from "./styles.module.css";
 
 import { Header } from "../components/Header";
 import { Input } from "../components/Input";
+import { Button } from "../components/Button";
+
 import { useState } from "react";
 
 
@@ -14,7 +16,7 @@ export function Home() {
     setListDescription(value);
     return;
   };
-
+  
 
   return (
 
@@ -30,7 +32,10 @@ export function Home() {
             onUpdateValueInput={onUpdateValueInput}
           />
 
-          <button></button>
+          <Button
+            type="submit"
+            title="Criar"
+          />
         </form>
 
       </main>

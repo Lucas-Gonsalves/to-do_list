@@ -1,0 +1,23 @@
+.button {
+  min-width: 9rem;
+  height: 4.6rem;
+
+  border: none;
+  outline: none;
+
+  border-radius: 8px;
+
+  background: var(--blue-300);
+  cursor: pointer;
+}
+
+.button:hover .button:focus{
+  filter: brightness(1.04);
+}
+
+
+@media (min-width: 425px) {
+  .button {
+    height: 5.4rem;
+  }
+}
