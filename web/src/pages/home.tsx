@@ -3,6 +3,7 @@ import styles from "./styles.module.css";
 import { Header } from "../components/Header";
 import { Input } from "../components/Input";
 import { Button } from "../components/Button";
+import { Todo } from "../components/Todo";
 
 import plus from "../assets/plus-icon.svg";
 import clipboard from "../assets/clipboard.svg";
@@ -50,19 +51,25 @@ export function Home() {
           </div>
 
           {
-            false && 
+            true && 
 
             <ul className={styles.showTodoList}>
 
               <li>
-                
+                <Todo 
+                  id="1"
+                  description="hello"
+                  isDone
+                  onCompleteList={() => {}}
+                  onDeleteList={() => {}}
+                />
               </li>
 
             </ul>
           }
           
           {
-            true &&
+            false &&
   
             <div className={styles.emptyTodoList}>
               <img src={clipboard} />

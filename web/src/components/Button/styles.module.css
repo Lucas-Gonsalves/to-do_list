@@ -27,7 +27,8 @@
 }
 
 
-.button:hover .button:focus{
+.button:hover, .button:focus{
+
   filter: brightness(1.04);
 }
 
