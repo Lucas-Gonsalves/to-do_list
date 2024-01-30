@@ -11,7 +11,7 @@ interface InputProps {
 
 export function Input({value, placeHolder, onUpdateValueInput}: InputProps) {
 
-  function callerOfUpdateValueInput(event: ChangeEvent<HTMLInputElement>) {
+  function callUpdateValueInput(event: ChangeEvent<HTMLInputElement>) {
     onUpdateValueInput(event.target.value);
     return;
   };
@@ -21,7 +21,7 @@ export function Input({value, placeHolder, onUpdateValueInput}: InputProps) {
     <input className={ styles.input }
       value={value}
       placeholder={placeHolder}
-      onChange={(event) => {callerOfUpdateValueInput(event)}}
+      onChange={(event) => {callUpdateValueInput(event)}}
     />
   );
 };

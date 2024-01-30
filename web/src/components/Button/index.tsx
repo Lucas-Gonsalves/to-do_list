@@ -8,6 +8,7 @@ interface ButtonProps {
   onClick?: () => void;
 };
 
+
 export function Button({ title, type, icon, onClick }: ButtonProps) {
   const handleClick = onClick || (() => {});
 

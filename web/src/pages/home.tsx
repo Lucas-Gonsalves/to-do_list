@@ -5,6 +5,7 @@ import { Input } from "../components/Input";
 import { Button } from "../components/Button";
 
 import plus from "../assets/plus-icon.svg";
+import clipboard from "../assets/clipboard.svg";
 
 import { useState } from "react";
 
@@ -48,9 +49,29 @@ export function Home() {
               <p id={styles.purpleTodoStatus} >Concluídas<span>2 de 5</span></p>
           </div>
 
+          {
+            false && 
 
-          <ul className={styles.showTodoList}>
-          </ul>
+            <ul className={styles.showTodoList}>
+
+              <li>
+                
+              </li>
+
+            </ul>
+          }
+          
+          {
+            true &&
+  
+            <div className={styles.emptyTodoList}>
+              <img src={clipboard} />
+
+              <p><span>Você ainda não tem tarefas cadastradas</span></p>
+              <p>Crie tarefas e organize seus itens a fazer</p>
+
+            </div>
+          }
 
         </section>
       </main>
