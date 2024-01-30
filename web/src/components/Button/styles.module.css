@@ -2,6 +2,15 @@
   min-width: 9rem;
   height: 4.6rem;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: .8rem;
+
+  font-size: var(--size-xs);
+  font-weight: var(--weight-bold);
+
   border: none;
   outline: none;
 
@@ -11,6 +20,13 @@
   cursor: pointer;
 }
 
+
+.button img {
+  width: var(--size-xm);
+  height: var(--size-xm);
+}
+
+
 .button:hover .button:focus{
   filter: brightness(1.04);
 }
@@ -19,5 +35,11 @@
 @media (min-width: 425px) {
   .button {
     height: 5.4rem;
+    font-size: var(--size-xm);
+  }
+
+  .button img {
+    width: var(--size-xg);
+    height: var(--size-xg);
   }
 }

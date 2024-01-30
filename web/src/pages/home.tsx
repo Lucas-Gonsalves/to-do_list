@@ -4,6 +4,8 @@ import { Header } from "../components/Header";
 import { Input } from "../components/Input";
 import { Button } from "../components/Button";
 
+import plus from "../assets/plus-icon.svg";
+
 import { useState } from "react";
 
 
@@ -35,6 +37,7 @@ export function Home() {
           <Button
             type="submit"
             title="Criar"
+            icon={plus}
           />
         </form>
 
