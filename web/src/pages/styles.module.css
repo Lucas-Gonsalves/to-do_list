@@ -21,11 +21,48 @@
   gap: .8rem;
 }
 
+.todoList {
+  margin-top: 6.4rem;
+}
 
+.todoStatus {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.todoStatus p {
+  font-size: var(--size-xs);
+  font-weight: var(--weight-bold);
+}
+
+.todoStatus span {
+  color: var(--gray-200);
+  
+  background: var(--gray-400);
+  border-radius: 999px;
+
+  padding: .2rem .8rem;
+  margin-left: .8rem;
+}
+
+
+#blueTodoStatus {
+  color: var(--blue-100);
+}
+
+
+#purpleTodoStatus {
+  color: var(--purple-100);
+}
 
 
 @media (min-width: 425px) {
   .content {
     padding: 1.6rem;
+  }
+
+  .todoStatus p {
+    font-size: var(--size-xm);
   }
 }

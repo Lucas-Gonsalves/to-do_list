@@ -16,7 +16,7 @@ export function Home() {
     setListDescription(value);
     return;
   };
-  
+
 
   return (
 
@@ -38,6 +38,18 @@ export function Home() {
           />
         </form>
 
+        <section className={styles.todoList}>
+
+          <div className={styles.todoStatus}>
+              <p id={styles.blueTodoStatus} >Tarefas criadas<span>5</span></p>
+              <p id={styles.purpleTodoStatus} >Concluídas<span>2 de 5</span></p>
+          </div>
+
+
+          <ul className={styles.showTodoList}>
+          </ul>
+
+        </section>
       </main>
     </div>
   );
