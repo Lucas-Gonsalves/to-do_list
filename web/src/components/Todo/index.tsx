@@ -1,7 +1,8 @@
-import { useState } from "react";
 import styles from "./styles.module.css";
 
-import { TbTrash }  from "react-icons/tb";
+import { ButtonCheck } from "../ButtonCheck";
+
+import { useState } from "react";
 
 interface TodoProps {
   id: string;
@@ -11,7 +12,7 @@ interface TodoProps {
 }
 
 export function Todo({ id, description, onCompleteList, onDeleteList }: TodoProps) {
-  const [ isDone, setIsDone ] = useState<boolean>(false);
+  const [ isChecked, setIsChecked ] = useState<boolean>(false);
 
   function callOnCompleteList(id: string){
     onCompleteList(id);
@@ -23,36 +24,27 @@ export function Todo({ id, description, onCompleteList, onDeleteList }: TodoProp
     return;
   };
 
-  function handleChangeIsDone() {
-    setIsDone(prevState => prevState ? false : true);
+  function onChangeChack() {
+    setIsChecked(prevState => prevState ? false : true);
     return;
   };
+
+  const isLineTrough = isChecked ? styles.lineThrough : styles.textNormal
 
   return (
 
     <div className={styles.todo}>
-      <button
-        className={styles.buttonComplete}
-        onClick={() => {handleChangeIsDone()}}
-      >
-        {
-          isDone && 
-          <div id={styles.imageCircleChecked} />
-        }
 
-        {
-          !isDone && 
-          <div id={styles.imageCircleUnchecked}/> 
-        }
-      </button>
+      <ButtonCheck
+        isActive={isChecked}
+        onChangeChack={onChangeChack}
+        
+      />  
 
-      <p>{description}</p>
+      <p id={isLineTrough}>{description}</p>
       
-      <button
-        className={styles.buttonDelete}
-        onClick={() => callOnDeleteList(id)}
-      >
-        <TbTrash />
+      <button className={styles.buttonDelete} onClick={() => callOnDeleteList(id)}>
+        <div id={styles.imageTrash} />
       </button>
     </div>
   );

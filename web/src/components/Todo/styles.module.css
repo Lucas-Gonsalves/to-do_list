@@ -1,50 +1,86 @@
+.todo {
+  width: 100%;
+  max-height: 14.4rem;
 
-.buttonComplete {
-  border: none;
-  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  text-align: justify;
+
+  padding: 1.6rem;
+  gap: 1.2rem;
+  
+  background: var(--gray-500);
+
+  border-color: var(--gray-400);
+  border-style: solid;
+  border-width: 1px;
+
+  border-radius: 8px;
+}
+
+
+.todo p {
+  min-width: 0;
+  max-width: 100%;
+
+  max-height: 7.2rem;
+  
+  overflow-wrap: break-word;
+  overflow-y: auto;
+
+  font-size: var(--size-xs);
+}
+
+#lineThrough {
+  text-decoration: line-through;
+  color: var(--gray-300)
+};
+
+#textNormal {
+  line-height: 140%;
+}
+
+
+.buttonDelete {
+  width: 2rem;
+  height: 2rem;
 
   background: none;
-  outline-color: transparent;
-  
+  border: none;
+
   cursor: pointer;
 }
 
-.buttonComplete div {
-  width: 1.6rem;
-  height: 1.6rem;
+#imageTrash {
+  width: 2rem;
+  height: 2rem;
 
   background-position: center;
   background-size: cover;
   object-fit: cover;
 
+  background-image: url("../../assets/trash.svg");
+
   transition: .3s;
 }
 
-
-#imageCircleChecked {
-  background-image: url("../../assets/circle-checked.svg");
-}
-
-#imageCircleChecked:hover {
-  background-image: url("../../assets/circle-checked-hover.svg");
+#imageTrash:hover {
   transition: .3s;
-}
 
-#imageCircleUnchecked {
-  background-image: url("../../assets/circle-unchecked.svg");
-}
-
-#imageCircleUnchecked:hover {
-  background-image: url("../../assets/circle-unchecked-hover.svg");
-  transition: .3s;
+  background-image: url("../../assets/trash-hover.svg");
 }
 
 
-.buttonDelete {
-  background: none;
-}
+@media (min-width: 425px) {
 
-.buttonDelete svg {
-  width: var(--size-xm);
-  height: var(--size-xm);
+  .buttonDelete, #imageTrash {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+
+  .todo p {
+    font-size: var(--size-xm);
+  }
 }

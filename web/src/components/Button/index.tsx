@@ -21,7 +21,7 @@ export function Button({ title, type, icon: Icon, onClick }: ButtonProps) {
       onClick={() => handleClick()}
     >
       {title}
-
+      
       {Icon && <Icon/>}
     </button>
   );

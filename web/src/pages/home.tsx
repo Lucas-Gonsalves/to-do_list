@@ -59,8 +59,7 @@ export function Home() {
               <li>
                 <Todo 
                   id="1"
-                  description="hello"
-                  isDone
+                  description="helloasdasbndkjasbdbaskjldbaskjasdasdasfashdashdkjhaskjdhaskjdhkajshdkjashdkjashdjkahskjdhaskdgbahbxcbasçdfnaslkfhasljhdklashdlashd~ljashdljãshb~dfljashbfjlaaskçjdas loremdlajksnfljasnçkdjasljhbdlashdlasgdljnaskljdbaskjhdgbasd"
                   onCompleteList={() => {}}
                   onDeleteList={() => {}}
                 />
