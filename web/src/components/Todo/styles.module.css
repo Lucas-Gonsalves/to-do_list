@@ -1,0 +1,50 @@
+
+.buttonComplete {
+  border: none;
+  border-radius: 50%;
+
+  background: none;
+  outline-color: transparent;
+  
+  cursor: pointer;
+}
+
+.buttonComplete div {
+  width: 1.6rem;
+  height: 1.6rem;
+
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+
+  transition: .3s;
+}
+
+
+#imageCircleChecked {
+  background-image: url("../../assets/circle-checked.svg");
+}
+
+#imageCircleChecked:hover {
+  background-image: url("../../assets/circle-checked-hover.svg");
+  transition: .3s;
+}
+
+#imageCircleUnchecked {
+  background-image: url("../../assets/circle-unchecked.svg");
+}
+
+#imageCircleUnchecked:hover {
+  background-image: url("../../assets/circle-unchecked-hover.svg");
+  transition: .3s;
+}
+
+
+.buttonDelete {
+  background: none;
+}
+
+.buttonDelete svg {
+  width: var(--size-xm);
+  height: var(--size-xm);
+}

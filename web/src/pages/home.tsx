@@ -5,8 +5,9 @@ import { Input } from "../components/Input";
 import { Button } from "../components/Button";
 import { Todo } from "../components/Todo";
 
-import plus from "../assets/plus-icon.svg";
+
 import clipboard from "../assets/clipboard.svg";
+import { FiPlusCircle } from "react-icons/fi";
 
 import { useState } from "react";
 
@@ -39,7 +40,7 @@ export function Home() {
           <Button
             type="submit"
             title="Criar"
-            icon={plus}
+            icon={FiPlusCircle}
           />
         </form>
 

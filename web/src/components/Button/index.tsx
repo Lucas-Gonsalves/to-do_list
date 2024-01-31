@@ -1,15 +1,16 @@
+import React from "react";
 import styles from "./styles.module.css";
 
 
 interface ButtonProps {
   title: string;
   type: "button" | "submit" | "reset" | undefined;
-  icon?: string;
+  icon?: React.ComponentType | undefined;
   onClick?: () => void;
 };
 
 
-export function Button({ title, type, icon, onClick }: ButtonProps) {
+export function Button({ title, type, icon: Icon, onClick }: ButtonProps) {
   const handleClick = onClick || (() => {});
 
   return (
@@ -21,7 +22,7 @@ export function Button({ title, type, icon, onClick }: ButtonProps) {
     >
       {title}
 
-      {icon && <img src={icon}/>}
+      {Icon && <Icon/>}
     </button>
   );
 };

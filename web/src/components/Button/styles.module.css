@@ -21,7 +21,7 @@
 }
 
 
-.button img {
+.button svg {
   width: var(--size-xm);
   height: var(--size-xm);
 }
@@ -39,7 +39,7 @@
     font-size: var(--size-xm);
   }
 
-  .button img {
+  .button svg {
     width: var(--size-xg);
     height: var(--size-xg);
   }

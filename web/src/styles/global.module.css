@@ -33,7 +33,7 @@ img {
 }
 
 
-:focus {
+:focus-visible {
 
   outline-color: var(--purple-300);
   outline-width: 1px;
