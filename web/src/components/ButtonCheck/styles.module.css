@@ -25,20 +25,20 @@
 
 
 #imageCircleChecked {
-  background-image: url("../../assets/circle-checked.svg");
+  background-image: url("../../assets/circle-radio/circle-checked.svg");
 }
 
 #imageCircleChecked:hover {
-  background-image: url("../../assets/circle-checked-hover.svg");
+  background-image: url("../../assets/circle-radio/circle-checked-hover.svg");
   transition: .3s;
 }
 
 #imageCircleUnchecked {
-  background-image: url("../../assets/circle-unchecked.svg");
+  background-image: url("../../assets/circle-radio/circle-unchecked.svg");
 }
 
 #imageCircleUnchecked:hover {
-  background-image: url("../../assets/circle-unchecked-hover.svg");
+  background-image: url("../../assets/circle-radio/circle-unchecked-hover.svg");
   transition: .3s;
 }
 
