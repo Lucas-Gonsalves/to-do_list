@@ -1,20 +1,21 @@
-
-.buttonComplete {
+.buttonComplete, .buttonComplete div {
   width: 2rem;
   height: 2rem;
+}
+
+
+.buttonComplete {
 
   border: none;
   border-radius: 50%;
 
   background: none;
-  outline-color: transparent;
   
   cursor: pointer;
 }
 
+
 .buttonComplete div {
-  width: 2rem;
-  height: 2rem;
 
   background-position: center;
   background-size: cover;
@@ -28,14 +29,17 @@
   background-image: url("../../assets/circle-radio/circle-checked.svg");
 }
 
+
 #imageCircleChecked:hover {
   background-image: url("../../assets/circle-radio/circle-checked-hover.svg");
   transition: .3s;
 }
 
+
 #imageCircleUnchecked {
   background-image: url("../../assets/circle-radio/circle-unchecked.svg");
 }
+
 
 #imageCircleUnchecked:hover {
   background-image: url("../../assets/circle-radio/circle-unchecked-hover.svg");
@@ -45,12 +49,7 @@
 
 @media (min-width: 425px) {
 
-  .buttonComplete {
-    width: 2.4rem;
-    height: 2.4rem;
-  }
-
-  .buttonComplete div {
+  .buttonComplete, .buttonComplete div {
     width: 2.4rem;
     height: 2.4rem;
   }

@@ -6,6 +6,7 @@ interface ButtonCheckProps {
   handleCompleteList?: () => void;
 };
 
+
 export function ButtonCheck({ handleCompleteList, isActive }: ButtonCheckProps) {
 
   function callHandleCompleteList() {
@@ -13,6 +14,7 @@ export function ButtonCheck({ handleCompleteList, isActive }: ButtonCheckProps) 
     return;
   };
 
+  const idToInsert = isActive ? styles.imageCircleChecked : styles.imageCircleUnchecked;
   
   return(
     <button
@@ -20,15 +22,9 @@ export function ButtonCheck({ handleCompleteList, isActive }: ButtonCheckProps) 
       className={styles.buttonComplete}
       onClick={() => {callHandleCompleteList()}}
     > 
-      {
-          isActive && 
-          <div id={styles.imageCircleChecked} />
-        }
 
-        {
-          !isActive && 
-          <div id={styles.imageCircleUnchecked}/> 
-        }
+      <div id={idToInsert} />
+
     </button>
   );
 };

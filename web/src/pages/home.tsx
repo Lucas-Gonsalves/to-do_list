@@ -10,6 +10,7 @@ import { FiPlusCircle } from "react-icons/fi";
 
 import { FormEvent, useState } from "react";
 
+
 interface List {
   id: string;
   description: string;
@@ -55,7 +56,6 @@ export function Home() {
       return false;
     };
   };
-
 
   function onUpdateValueInput(value: string) {
     setisDisable(verifyListDescription(value));
@@ -126,6 +126,7 @@ export function Home() {
 
 
   const { checkedLengthIsTrue, listsLenght } = countLists();
+  const isListHaveContent = lists.length > 0;
 
   return (
 
@@ -157,7 +158,7 @@ export function Home() {
           </div>
 
           {
-            lists.length > 0 && 
+            isListHaveContent && 
 
             <ul className={styles.showTodoList}>
               {
@@ -179,7 +180,7 @@ export function Home() {
           }
       
           {
-            lists.length <= 0 &&
+            !isListHaveContent &&
   
             <div className={styles.emptyTodoList}>
               <img src={clipboard} />

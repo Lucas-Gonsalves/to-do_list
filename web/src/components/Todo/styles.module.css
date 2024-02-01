@@ -20,6 +20,7 @@
   border-radius: 8px;
 }
 
+
 .todo p {
   min-width: 0;
   width: 100%;
@@ -35,6 +36,7 @@
   font-size: var(--size-xs);
 }
 
+
 #lineThrough {
   text-decoration: line-through;
   color: var(--gray-300)
@@ -49,6 +51,11 @@
   border: none;
 
   cursor: pointer;
+}
+
+
+.buttonDelete:focus-visible {
+  border-radius: 4px;
 }
 
 

@@ -21,9 +21,11 @@
   gap: .8rem;
 }
 
+
 .todoList {
   margin-top: 6.4rem;
 }
+
 
 .todoStatus {
   display: flex;
@@ -31,10 +33,12 @@
   gap: 2rem;
 }
 
+
 .todoStatus p {
   font-size: var(--size-xs);
   font-weight: var(--weight-bold);
 }
+
 
 .todoStatus span {
   color: var(--gray-200);
@@ -55,6 +59,7 @@
 #purpleTodoStatus {
   color: var(--purple-100);
 }
+
 
 .emptyTodoList {
   height: 24.4rem;
@@ -81,6 +86,7 @@
   margin-bottom: 1.6rem;
 }
 
+
 .emptyTodoList p {
   font-size: var(--size-xs);
   color: var(--gray-300);
@@ -88,29 +94,29 @@
   line-height: 140%;
 }
 
+
 .emptyTodoList p span {
   font-weight: var(--weight-bold);
 }
+
 
 .showTodoList {
   margin-top: 2.4rem;
   list-style: none;
 }
 
+
 .showTodoList li {
   margin-bottom: 1.2rem;
 }
+
 
 @media (min-width: 425px) {
   .content {
     padding: 1.6rem;
   }
 
-  .todoStatus p {
-    font-size: var(--size-xm);
-  }
-
-  .emptyTodoList p {
+  .todoStatus p, .emptyTodoList p{
     font-size: var(--size-xm);
   }
 }

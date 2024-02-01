@@ -11,6 +11,7 @@ interface TodoProps {
   onDeleteList: (id: string) => void;
 }
 
+
 export function Todo({ id, description, isChecked, onCompleteList, onDeleteList }: TodoProps) {
 
   function handleCompleteList() {
@@ -23,7 +24,8 @@ export function Todo({ id, description, isChecked, onCompleteList, onDeleteList 
     return;
   };
 
-  const isLineTrough = isChecked ? styles.lineThrough : styles.textNormal
+  const isLineTrough = isChecked ? styles.lineThrough : styles.textNormal;
+
 
   return (
 
@@ -36,7 +38,10 @@ export function Todo({ id, description, isChecked, onCompleteList, onDeleteList 
 
       <p id={isLineTrough}>{description}</p>
 
-      <button className={styles.buttonDelete} onClick={() => handleDeleteList()}>
+      <button 
+        className={styles.buttonDelete} 
+        onClick={() => handleDeleteList()}
+      >
         <div id={styles.imageTrash} />
       </button>
     </div>

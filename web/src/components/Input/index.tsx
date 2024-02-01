@@ -9,6 +9,7 @@ interface InputProps {
   onUpdateValueInput: (value: string) => void;
 };
 
+
 export function Input({value, placeHolder, onUpdateValueInput}: InputProps) {
 
   function callUpdateValueInput(event: ChangeEvent<HTMLInputElement>) {

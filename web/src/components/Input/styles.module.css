@@ -16,9 +16,11 @@
   border-width: 1px;
 }
 
+
 .input:hover, .input:focus {
   filter: brightness(1.02);
 }
+
 
 @media (min-width: 425px) {
   .input {
