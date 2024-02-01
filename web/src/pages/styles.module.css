@@ -94,8 +94,11 @@
 
 .showTodoList {
   margin-top: 2.4rem;
-
   list-style: none;
+}
+
+.showTodoList li {
+  margin-bottom: 1.2rem;
 }
 
 @media (min-width: 425px) {

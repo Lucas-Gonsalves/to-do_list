@@ -3,13 +3,13 @@ import styles from "./styles.module.css";
 
 interface ButtonCheckProps {
   isActive: boolean;
-  onChangeChack?: () => void;
+  handleCompleteList?: () => void;
 };
 
-export function ButtonCheck({ onChangeChack, isActive }: ButtonCheckProps) {
+export function ButtonCheck({ handleCompleteList, isActive }: ButtonCheckProps) {
 
-  function handleOnChangeChack() {
-    onChangeChack ? onChangeChack() : (() => {});
+  function callHandleCompleteList() {
+    handleCompleteList ? handleCompleteList() : (() => {});
     return;
   };
 
@@ -18,7 +18,7 @@ export function ButtonCheck({ onChangeChack, isActive }: ButtonCheckProps) {
     <button
       type="button"
       className={styles.buttonComplete}
-      onClick={() => {handleOnChangeChack()}}
+      onClick={() => {callHandleCompleteList()}}
     > 
       {
           isActive && 

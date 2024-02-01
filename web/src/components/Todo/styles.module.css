@@ -1,12 +1,12 @@
 .todo {
   width: 100%;
+
+  min-height: 7.2rem;
   max-height: 14.4rem;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  text-align: justify;
 
   padding: 1.6rem;
   gap: 1.2rem;
@@ -20,12 +20,14 @@
   border-radius: 8px;
 }
 
-
 .todo p {
   min-width: 0;
-  max-width: 100%;
+  width: 100%;
 
   max-height: 7.2rem;
+
+  line-height: 140%;
+  text-align: justify;
   
   overflow-wrap: break-word;
   overflow-y: auto;
@@ -36,10 +38,6 @@
 #lineThrough {
   text-decoration: line-through;
   color: var(--gray-300)
-};
-
-#textNormal {
-  line-height: 140%;
 }
 
 
@@ -53,6 +51,7 @@
   cursor: pointer;
 }
 
+
 #imageTrash {
   width: 2rem;
   height: 2rem;
@@ -65,6 +64,7 @@
 
   transition: .3s;
 }
+
 
 #imageTrash:hover {
   transition: .3s;

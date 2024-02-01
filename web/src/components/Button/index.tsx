@@ -6,11 +6,12 @@ interface ButtonProps {
   title: string;
   type: "button" | "submit" | "reset" | undefined;
   icon?: React.ComponentType | undefined;
+  isDisabled?: boolean;
   onClick?: () => void;
 };
 
 
-export function Button({ title, type, icon: Icon, onClick }: ButtonProps) {
+export function Button({ title, type, icon: Icon, isDisabled = false, onClick }: ButtonProps) {
   const handleClick = onClick || (() => {});
 
   return (
@@ -19,6 +20,7 @@ export function Button({ title, type, icon: Icon, onClick }: ButtonProps) {
       className={styles.button}
       type={type}
       onClick={() => handleClick()}
+      disabled={isDisabled}
     >
       {title}
       

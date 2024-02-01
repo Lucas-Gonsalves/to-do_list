@@ -20,6 +20,11 @@
   cursor: pointer;
 }
 
+.button:disabled {
+  cursor: not-allowed;
+  filter: brightness(.96);
+}
+
 
 .button svg {
   width: var(--size-xm);
@@ -27,8 +32,7 @@
 }
 
 
-.button:hover, .button:focus{
-
+.button:hover:not(:disabled), .button:focus:not(:disabled){
   filter: brightness(1.04);
 }
 

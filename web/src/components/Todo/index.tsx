@@ -2,30 +2,24 @@ import styles from "./styles.module.css";
 
 import { ButtonCheck } from "../ButtonCheck";
 
-import { useState } from "react";
 
 interface TodoProps {
   id: string;
   description: string;
+  isChecked: boolean
   onCompleteList: (id: string) => void;
   onDeleteList: (id: string) => void;
 }
 
-export function Todo({ id, description, onCompleteList, onDeleteList }: TodoProps) {
-  const [ isChecked, setIsChecked ] = useState<boolean>(false);
+export function Todo({ id, description, isChecked, onCompleteList, onDeleteList }: TodoProps) {
 
-  function callOnCompleteList(id: string){
+  function handleCompleteList() {
     onCompleteList(id);
     return;
   };
 
-  function callOnDeleteList(id: string){
+  function handleDeleteList(){
     onDeleteList(id);
-    return;
-  };
-
-  function onChangeChack() {
-    setIsChecked(prevState => prevState ? false : true);
     return;
   };
 
@@ -37,13 +31,12 @@ export function Todo({ id, description, onCompleteList, onDeleteList }: TodoProp
 
       <ButtonCheck
         isActive={isChecked}
-        onChangeChack={onChangeChack}
-        
+        handleCompleteList={handleCompleteList}
       />  
 
       <p id={isLineTrough}>{description}</p>
-      
-      <button className={styles.buttonDelete} onClick={() => callOnDeleteList(id)}>
+
+      <button className={styles.buttonDelete} onClick={() => handleDeleteList()}>
         <div id={styles.imageTrash} />
       </button>
     </div>
